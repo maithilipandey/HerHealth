@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* ---------- BASE ---------- */
+
+body {
+  background: linear-gradient(135deg,#ffe4f2,#f5d0fe,#ddd6fe);
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  color: #4b2c5e;
+}
+
+/* ---------- PAGE LAYOUT ---------- */
+
+.page-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ---------- SECTIONS ---------- */
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d946ef;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #6b7280;
+}
+
+/* ---------- GRID ---------- */
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 30px;
+}
+
+/* ---------- CARDS ---------- */
+
+.card-soft {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card-soft:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* ---------- BUTTON ---------- */
+
+.btn-primary {
+  background: #ec4899;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #db2777;
+}
+
+/* ---------- ANIMATIONS ---------- */
+
+@keyframes float {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
