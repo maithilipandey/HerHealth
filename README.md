@@ -75,7 +75,7 @@ http://localhost:3000
 - Personalized wellness recommendations
 - Secure login system
 - Data visualization dashboard
-
+  
 ---
 
 ## 👩‍💻 Author
